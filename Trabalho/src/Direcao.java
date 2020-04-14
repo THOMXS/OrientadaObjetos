@@ -1,14 +1,15 @@
 public class Direcao {
-	public String nomedirecao;
-	
+	private String nomeDirecao;
+
 	public Direcao(String name) {
-		nomedirecao = name;
+		nomeDirecao = name;
 	}
-	public void setnomedirecao(String name) {
-		nomedirecao = name;
+
+	public void setNomeDirecao(String name) {
+		nomeDirecao = name;
 	}
-	
-	public String getnomedirecao() {
-		return nomedirecao;
+
+	public String getNomeDirecao() {
+		return nomeDirecao;
 	}
 }

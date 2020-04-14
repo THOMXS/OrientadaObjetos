@@ -1,18 +1,15 @@
 public class Genero {
-	public String nomegenero;
-	
-	void exibirgeneros(){
-		
-	}
+	private String nomeGenero;
+
 	public Genero(String name) {
-		nomegenero = name;
+		nomeGenero = name;
 	}
 
-	public void setnomegenero(String name) {
-		nomegenero = name;
+	public void setNomeGenero(String name) {
+		nomeGenero = name;
 	}
 
-	public String getnomegenero() {
-		return nomegenero;
+	public String getNomeGenero() {
+		return nomeGenero;
 	}
 }
