@@ -1,16 +1,15 @@
 public class Conta {
-		public String nomeplano;
+		private String nomePlano;
 		
 			public Conta(String name) {
-				nomeplano = name;
+				nomePlano = name;
 			}
-			public void setnomeplano(String name) {
-				nomeplano = name;
-			}
-			
-			public String getnomeplano() {
-				return nomeplano;
+			public void setNomePlano(String name) {
+				nomePlano = name;
 			}
 			
-			
+			public String getNomePlano() {
+				return nomePlano;
+			}
+						
 		}
