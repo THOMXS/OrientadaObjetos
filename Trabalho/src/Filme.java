@@ -4,8 +4,10 @@ public class Filme { //Filme centraliza tudo
 
 	Genero genero;
 	Direcao direcao;
-	// Entidade entidade;
-
+	Estudio estudio;
+	Ator ator;
+	Streaming streaming;
+	
 	public Filme(String name, Genero genero, Direcao direcao, int anoFilme) {
 		nomeFilme = name;
 		ano = anoFilme;
@@ -17,11 +19,12 @@ public class Filme { //Filme centraliza tudo
 		nomeFilme = name;
 	}
 
-	public void setGenero(Genero genero) {
+	// SET 
+	public void setNomeGenero(Genero genero) {
 		this.genero = genero;
 	}
 
-	public void setDirecao(Direcao direcao) {
+	public void setNomeDirecao(Direcao direcao) {
 		this.direcao = direcao;
 	}
 	
@@ -32,20 +35,45 @@ public class Filme { //Filme centraliza tudo
 	public void setNomeFilme(String name) {
 		nomeFilme = name;
 	}
+	
+	public void setNomEstudio(Estudio estudio) {
+		this.estudio = estudio;
+	}
 
+	public void setNomeAtor(Ator ator) {
+		this.ator = ator;
+	}
+	
+	public void setNomeStreaming(Streaming streaming) {
+		this.streaming = streaming;
+	}
+	
+	// GET
 	public String getNomeFilme() {
 		return nomeFilme;
 	}
 
-	public Genero getGenero() {
+	public Genero getNomeGenero() {
 		return genero;
 	}
 
-	public Direcao getDirecao() {
+	public Direcao getNomeDirecao() {
 		return direcao;
 	}
 
 	public int getAno() {
 		return ano;
+	}
+	
+	public Ator getNomeAtor() {
+		return ator;
+	}
+
+	public Estudio getNomeEstudio() {
+		return estudio;
+	}
+
+	public Streaming getNomeStreaming() {
+		return streaming;
 	}
 }

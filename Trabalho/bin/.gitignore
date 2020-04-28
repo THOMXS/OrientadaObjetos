@@ -1,8 +1,5 @@
-/Conta.class
-/Direcao.class
-/Entidade.class
-/Filme.class
-/Genero.class
-/GenerosFilmes.class
-/Inicial.class
-/Plano.class
+/ProgramaControle.class
+/Estudio.class
+/Favorito.class
+/Ator.class
+/Streaming.class

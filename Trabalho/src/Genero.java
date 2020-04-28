@@ -12,4 +12,5 @@ public class Genero {
 	public String getNomeGenero() {
 		return nomeGenero;
 	}
+
 }
