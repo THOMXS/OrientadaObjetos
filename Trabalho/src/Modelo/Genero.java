@@ -2,6 +2,7 @@ package Modelo;
 
 public class Genero {
 	private String nomeGenero;
+	
 	public Genero() {
 		
 	}

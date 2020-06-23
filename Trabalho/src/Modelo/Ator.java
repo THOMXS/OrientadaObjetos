@@ -1,18 +1,22 @@
 package Modelo;
 
-public class Ator {
-	private String nomeAtor;
-
+public class Ator extends Pessoa{
+	
 	public Ator(String name) {
-		nomeAtor = name;
+		super(name);
+		
 	}
 
-	public void setNomeAtor(String name) {
-		nomeAtor = name;
+	public Ator() {
+		
 	}
-
-	public String getNomeAtor() {
-		return nomeAtor;
-	}
+	
+//	public void setNomeAtor(String name) {
+//		nomeAtor = name;
+//	}
+//
+//	public String getNomeAtor() {
+//		return nomeAtor;
+//	}
 
 }

@@ -8,6 +8,7 @@ public class FilmeControle {
 	public FilmeApresentacao filmeApresentacao = new FilmeApresentacao();
 	public ArrayList<Filme> listaFilme = new ArrayList<Filme>();
 	
+	//ajustar para não recadastrar filme
 	public void adicionaFilme(Filme filme) {
 		if(!listaFilme.contains(filme) || listaFilme.size() < 100) {
 			listaFilme.add(filme);

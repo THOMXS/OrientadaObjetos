@@ -10,6 +10,7 @@ public class GeneroControle {
 	
 	private GeneroApresentacao generoApresentacao = new GeneroApresentacao();
 
+	//ajustar para não recadastrar genero
 	public void adicionaGenero() {
 		Genero genero = new Genero();
 		generoApresentacao.cadastraGenero(genero);

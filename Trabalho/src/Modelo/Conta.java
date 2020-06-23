@@ -1,17 +1,18 @@
 package Modelo;
 
-public class Conta {
+public class Conta extends Plano {
 	private String nomePlano;
 	
 		public Conta(String name) {
-			nomePlano = name;
-		}
-		public void setNomePlano(String name) {
-			nomePlano = name;
+			super(name);
 		}
 		
-		public String getNomePlano() {
-			return nomePlano;
-		}
+//		public void setNomePlano(String name) {
+//			nomePlano = name;
+//		}
+//		
+//		public String getNomePlano() {
+//			return nomePlano;
+//		}
 					
 	}

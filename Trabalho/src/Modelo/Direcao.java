@@ -1,17 +1,26 @@
 package Modelo;
 
-public class Direcao {
-	private String nomeDirecao;
+public class Direcao extends Pessoa {
+	//private String nomeDirecao;
 
+	
 	public Direcao(String name) {
-		nomeDirecao = name;
+		super(name);
+		
 	}
 
-	public void setNomeDirecao(String name) {
-		nomeDirecao = name;
+	public Direcao() {
+		
 	}
-
-	public String getNomeDirecao() {
-		return nomeDirecao;
-	}
+//	public Direcao(String name) {
+//		nomeDirecao = name;
+//	}
+//
+//	public void setNomeDirecao(String name) {
+//		nomeDirecao = name;
+//	}
+//
+//	public String getNomeDirecao() {
+//		return nomeDirecao;
+//	}
 }

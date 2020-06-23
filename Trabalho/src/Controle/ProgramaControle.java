@@ -1,4 +1,4 @@
-package Controle;
+ package Controle;
 import Modelo.Filme;
 import Modelo.Genero;
 import Apresentacao.ProgramaApresentacao;
@@ -35,10 +35,10 @@ public class ProgramaControle {
 			op = programaApresentacao.mostraMenuFilme();
 			switch (op) {
 			case 1:
-				adicionaFilmeControle();
+				adicionaFilme();
 				break;
 			case 2:
-				pesquisaFilmeControle();
+				pesquisaFilme();
 				break;
 			}
 		}
@@ -50,14 +50,14 @@ public class ProgramaControle {
 			op = programaApresentacao.mostraMenuGenero();
 			switch (op) {
 			case 1:
-				adicionaGeneroControle();
+				adicionaGenero();
 				break;
 			
 			}
 		}
 }
 	
-	public void adicionaFilmeControle() {
+	public void adicionaFilme() {
 		Filme filme = new Filme();
 		
 		filmeControle.filmeApresentacao.cadastraFilme(filme);
@@ -69,11 +69,11 @@ public class ProgramaControle {
 		 
 	}
 	
-	public void pesquisaFilmeControle() {
+	public void pesquisaFilme() {
 		filmeControle.pesquisaFilme();
 	}
 	
-	public void adicionaGeneroControle() {
+	public void adicionaGenero() {
 		generoControle.adicionaGenero();
 		
 	}

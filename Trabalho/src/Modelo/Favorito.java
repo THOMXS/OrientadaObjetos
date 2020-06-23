@@ -5,7 +5,8 @@ public class Favorito {
 
 	Conta conta;
 	Streaming entidade;
-
+	Filme filme;
+	
 	public void Favorito(Conta conta, Streaming entidade, String favorito) {
 
 		this.conta = conta;

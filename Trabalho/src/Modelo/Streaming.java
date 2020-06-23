@@ -1,19 +1,28 @@
 package Modelo;
 
-public class Streaming {
-	private String NomeStream;
-
+public class Streaming extends Pessoa {
+	
 	public Streaming(String name) {
-		NomeStream = name;
-
+		super(name);
+		
 	}
 
-	public void setNomeStream(String name) {
-		NomeStream = name;
+	public Streaming() {
+		
 	}
-
-	public String getNomeStream() {
-		return NomeStream;
-	}
+//	private String NomeStream;
+//
+//	public Streaming(String name) {
+//		NomeStream = name;
+//
+//	}
+//
+//	public void setNomeStream(String name) {
+//		NomeStream = name;
+//	}
+//
+//	public String getNomeStream() {
+//		return NomeStream;
+//	}
 
 }

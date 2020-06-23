@@ -3,7 +3,9 @@ package Apresentacao;
 import javax.swing.JOptionPane;
 
 public class ProgramaApresentacao {
-
+	
+	//adicionar pessoas + usuários
+	
 	public int mostraMenuPrincipal() {
 		String aux = JOptionPane
 				.showInputDialog(
