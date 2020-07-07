@@ -12,10 +12,10 @@ public class FilmeControle {
 	public void adicionaFilme(Filme filme) {
 		if(!listaFilme.contains(filme) || listaFilme.size() < 100) {
 			listaFilme.add(filme);
-		//return "Filme Adionado!";
+		//return "Filme Adicionado!";
 		}else {
 			filmeApresentacao.listaVazia();
-			//return "Filme Já Adionado!";
+			//return "Filme Já Adicionado!";
 		}
 	}
 	

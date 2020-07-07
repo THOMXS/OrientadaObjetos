@@ -1,17 +1,22 @@
  package Controle;
+ 
 import Modelo.Filme;
 import Modelo.Genero;
-import Apresentacao.ProgramaApresentacao;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
+import Apresentacao.ProgramaApresentacao;
+import Apresentacao.TratamentoErroApresentacao;
 public class ProgramaControle {
 
 	ProgramaApresentacao programaApresentacao = new ProgramaApresentacao();
 	FilmeControle filmeControle = new FilmeControle();
 	GeneroControle generoControle = new GeneroControle();
-		
+	TratamentoErroApresentacao tratamento = new TratamentoErroApresentacao();
 	public ProgramaControle() {
 		int op = 0;
-		while (op != 10) {
+		while (op != -1) {
+			try {
 			op = programaApresentacao.mostraMenuPrincipal();
 			switch (op) {
 			case 1:
@@ -23,10 +28,24 @@ public class ProgramaControle {
 //			case 3:
 //				menuStreaming();
 //				break;
+			case 10:
+				tratamento.fechar();
+				break;
+			default: 
+				
+				tratamento.TenteDeNovo();
 			}
 		
+		}catch(NumberFormatException ex){
+			
+			System.out.println("Não é um número...");
+			System.out.printf("Exception: %s%n", ex);
+			tratamento.TenteDeNovo();
+			
 		}
-	
+			
+		}
+
 	}
 	
 	public void menuFilme() {
@@ -77,5 +96,6 @@ public class ProgramaControle {
 		generoControle.adicionaGenero();
 		
 	}
+	
 	
 }
