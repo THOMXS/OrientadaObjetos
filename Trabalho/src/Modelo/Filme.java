@@ -1,6 +1,7 @@
 package Modelo;
 
-public class Filme { //Filme centraliza tudo
+
+public class Filme extends Midia { //Filme centraliza tudo
 	private String nomeFilme;
 	private int ano;
 
@@ -81,5 +82,11 @@ public class Filme { //Filme centraliza tudo
 
 	public Streaming getNomeStreaming() {
 		return streaming;
+	}
+
+	@Override
+	public void mudarMidia(String midia) {
+		// TODO Auto-generated method stub
+		
 	}
 }

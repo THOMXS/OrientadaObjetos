@@ -33,5 +33,10 @@ public class FilmeControle {
 			filmeApresentacao.listaVazia();
 		}
 	}
+	
+	public ArrayList<Filme> retornaFilmes(){
+
+        return listaFilme;
+    }
 
 }

@@ -13,7 +13,8 @@ public class ProgramaControle {
 	FilmeControle filmeControle = new FilmeControle();
 	GeneroControle generoControle = new GeneroControle();
 	TratamentoErroApresentacao tratamento = new TratamentoErroApresentacao();
-	public ProgramaControle() {
+//	ConsoleControle consoleControle = new ConsoleControle();
+	public void ProgramaControle() {
 		int op = 0;
 		while (op != -1) {
 			try {
@@ -25,9 +26,9 @@ public class ProgramaControle {
 			case 2: 
 				menuGenero();
 				break;
-//			case 3:
-//				menuStreaming();
-//				break;
+			case 9:
+				//consoleControle.consoleApresentacao.mostraMenuInicial();
+				break;
 			case 10:
 				tratamento.fechar();
 				break;
